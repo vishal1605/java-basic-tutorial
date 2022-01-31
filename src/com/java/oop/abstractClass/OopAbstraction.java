@@ -1,4 +1,4 @@
-package com.java.oop;
+package com.java.oop.abstractClass;
 
 public abstract class OopAbstraction{
 	int age = 14;
@@ -13,6 +13,7 @@ public abstract class OopAbstraction{
 
 	public OopAbstraction(String mail) {
 		this.email = mail;
+		number = 17;
 		System.out.println(mail);
 
 	}

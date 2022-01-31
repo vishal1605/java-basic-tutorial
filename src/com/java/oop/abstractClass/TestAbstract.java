@@ -1,4 +1,4 @@
-package com.java.oop;
+package com.java.oop.abstractClass;
 
 abstract class A {
 	abstract void m1(A a);

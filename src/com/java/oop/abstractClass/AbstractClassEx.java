@@ -1,4 +1,4 @@
-package com.java.oop;
+package com.java.oop.abstractClass;
 
 public abstract class AbstractClassEx extends OopAbstraction {
 
