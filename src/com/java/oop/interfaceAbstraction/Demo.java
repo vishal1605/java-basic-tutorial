@@ -1,51 +1,40 @@
 package com.java.oop.interfaceAbstraction;
 
-abstract interface Test {
-	int i=10,
-	j=5;
-	void m1();
-	default String getValue() {
-		return null;
-		
-	}
-	static String getString() {
-		return "Vishal";
-		
-	}
-	
-	void myMethod(String name);
-//	public static void main(String[] args) {
-//		String string = InterfaceAbstraction.getString();
-//		System.out.println(string);
-//		
-//	}
-	
-}
-
-public class Demo implements Test {
+public class Demo implements InterfaceAbstraction {
 
 	public static void main(String[] args) {
-//		InterfaceAbstraction ia = new Demo();
-//		ia.m1();
-		System.out.println(InterfaceAbstraction.i);
-
-	}
-
-	@Override
-	public
-	void m1() {
+		Demo d = new Demo();
+		d.getValue(Demo.sirName);
+		System.out.println(d.i);
+		String string = InterfaceAbstraction.getString(sirName);
 		
+	
 	}
 
 	@Override
-	public String getValue() {
-		return "Sahil";
+	public String m1(String name) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
-	public void myMethod(String name) {
-		
+	public String m1(int name) {
+		// TODO Auto-generated method stub
+		return null;
 	}
+
+	@Override
+	public String getValue(String name) {
+		// TODO Auto-generated method stub
+		return InterfaceAbstraction.super.getValue(name);
+	}
+
+	
+	
+	
+	
+
+	
 	
 
 }
