@@ -36,11 +36,19 @@ public class CollectionAllPrintMethods {
 //			System.out.println(i+" : "+list.indexOf(i));
 //		}
 		
-		list.forEach(i -> {
-			System.out.print(i+": ");
-			System.out.println(list.indexOf(i));
-		});
-
+//		list.forEach(i -> {
+//			System.out.print(i+": ");
+//			System.out.println(list.indexOf(i));
+//		});
+		
+		
+//		Iterrate List ib backward direction
+		
+		for(int i = list.size()-1; i>=0;i--) {
+			System.out.println(list.get(i));
+			
+		}
+	
 	}
 
 }
