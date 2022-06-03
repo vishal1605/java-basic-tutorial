@@ -8,6 +8,7 @@ class Demo{
 		
 		System.out.println("X = "+x);
 		System.out.println("Y = "+y);
+		System.out.println("Y = "+B.y);
 		return 0;
 	}
 }
@@ -16,16 +17,18 @@ public class Reference {
 	public static void main(String[] args) {
 		Demo C = new Demo();
 		Demo D = new Demo();
-//		D.y = 80;
-//		
-////		C.display(C, D);
+		
+//		Demo A = C;
+		D.y = 80;
+		
+		C.display(C, D);
 //		D.display(C, D);
 		
-		C.x = 75;
-		System.out.println("X = "+C.x);
-		System.out.println("Y = "+C.y);
-		System.out.println("X = "+D.x);
-		System.out.println("Y = "+D.y);
+//		C.x = 75;
+//		System.out.println("X = "+A.x);
+//		System.out.println("Y = "+C.y);
+//		System.out.println("X = "+D.x);
+//		System.out.println("Y = "+D.y);
 		
 
 	}
